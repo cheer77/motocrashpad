@@ -7,6 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     color: #1c1b17;
+    background-color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 130%;
     @extend %m-400;
 }
 
