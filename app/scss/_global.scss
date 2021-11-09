@@ -1,0 +1,21 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #1c1b17;
+    @extend %m-400;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1145px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
