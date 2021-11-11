@@ -52,6 +52,36 @@
         }
     }
 
+    .info {
+        &__items {
+            // padding-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &:last-child {
+                padding-top: 30px;
+            }
+        }
+
+        &__item {
+            margin-top: 30px;
+            max-width: 540px;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:nth-child(1) {
+                margin-right: 0px;
+            }
+            &:nth-child(3) {
+                margin-top: 0px;
+                margin-right: 0px;
+            }
+            &:nth-child(4) {
+                margin-top: 0px;
+            }
+        }
+    }
+
     .help {
         &__inner {
             display: flex;
@@ -143,24 +173,50 @@
 
     .example {
         &__inner {
+            // display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        &__block1,
+        &__block2 {
+            margin-right: 15px;
+        }
+        &__block2 {
+            margin-right: 0;
+        }
+        &__block3 {
+            margin-top: 30px;
             display: flex;
             justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 50px;
+            // align-items: center;
             width: 100%;
-            // min-height: 690px;
-            // flex-wrap: wrap;
+            max-width: 460px;
+            // padding: 0 140px 0 130px;
+            margin-right: 15px;
+            // margin-left: 130px;
+            flex-wrap: wrap;
+            &:last-child {
+                margin-right: 0;
+            }
         }
         &__block1-img {
-            // width: 100%;
-            // height: 100%;
-            height: 492px;
+            height: 473px;
         }
         &__block2-img,
         &__block3-img {
             width: 100%;
             // height: 100%;
             height: 221px;
+        }
+        &__img-3 {
+            margin-bottom: 0px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__img-2 {
+            margin-bottom: 30px;
         }
 
         &__img {
@@ -183,12 +239,18 @@
             // flex-wrap: wrap;
             // max-width: 600px;
             width: 100%;
-            gap: 50px;
             // width: 100%;
         }
+        &__logo {
+            margin-bottom: 40px;
+        }
         &__soc {
-            margin-left: 0px;
-            margin-right: 10px;
+            margin-left: 120px;
+            margin-right: 80px;
+            // margin-bottom: 100px;
+        }
+        &__links {
+            margin-right: 50px;
         }
     }
 }
@@ -201,8 +263,22 @@
     .header {
         min-height: 80px;
         &__logo {
+            display: none;
             width: 213px;
             height: 40px;
+        }
+        &__logo-mob {
+            display: flex;
+            justify-content: space-between;
+            max-width: 233px;
+            height: 40px;
+        }
+        &__logo-icon {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+        &__logo-text {
+            width: 183px;
         }
     }
 
@@ -328,14 +404,30 @@
         }
         &__inner {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
+            justify-content: center;
             margin-bottom: 40px;
             width: 100%;
-            // min-height: 690px;
-            // flex-wrap: wrap;
         }
+        &__block1,
+        &__block2 {
+            margin-right: 0px;
+        }
+
+        &__block3 {
+            margin-top: 0px;
+            justify-content: center;
+            margin-right: 0px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__block1,
+        &__block2 {
+            margin-bottom: 30px;
+        }
+
         &__block1-img {
             height: 100%;
         }
@@ -367,6 +459,10 @@
         &__wrapper {
             flex-wrap: wrap;
             justify-content: center;
+        }
+        &__wrapper-block1 {
+            margin-right: 0px;
+            margin-bottom: 20px;
         }
         &__wrapper-title {
             font-size: 30px;
@@ -467,12 +563,12 @@
         padding: 53px 0;
         &__inner {
             flex-direction: column;
-            gap: 0px;
         }
         &__logo {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 0;
         }
         &__soc {
             margin: 30px 0 30px 0;
@@ -482,6 +578,7 @@
         &__links {
             align-items: center;
             margin-bottom: 30px;
+            margin-right: 0;
         }
         &__link {
             font-size: 15px;

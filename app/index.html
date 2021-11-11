@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="ua">
 
 <head>
-    <title>Document</title>
+    <title>Мото крашпеди, мото слайдери, moto crash pads - motocrashpad.com</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body_hide">
 
 
 
@@ -16,6 +33,11 @@
     <header class="header">
         <div class="container">
             <img class="header__logo" src="images/logo.png" alt="">
+
+            <div class="header__logo-mob">
+                <img src="images/logo-mob.png" alt="" class="header__logo-icon">
+                <img src="images/logo-mob-text.svg" alt="" class="header__logo-text">
+            </div>
         </div>
     </header>
 
@@ -29,21 +51,29 @@
             <div class="container">
 
                 <div class="moto__descr">
-                    <p class="moto__text">
+                    <h1 class="moto__text">
                         Мото крашпеди (мото слайдери, moto crash pads) – це аксесуар встановлюється на мотоцикл для
                         запобігання ушкоджень при падінні.
-                    </p>
-                    <p class="moto__text">
+                    </h1>
+                    <h2 class="moto__text">
                         Походить це слово від англійського <span>Crashpad</span>, де <span>Crash</span> – це аварія,
                         падіння; <span>Pad</span> – це подушка. Тобто
                         подушка при падінні.
-                    </p>
+                    </h2>
                 </div>
 
 
                 <div class="moto__inner">
-                    <img class="moto__img" src="images/moto.webp" alt="">
-                    <img class="moto__img-mob" src="images/moto-mob.webp" alt="">
+                    <picture>
+                        <source srcset="images/moto.png" media="(min-width: 600px)">
+                        <img class="moto__img" src="images/moto.png" alt="">
+                    </picture>
+
+                    <picture>
+                        <source srcset="images/moto-mob.png" media="(min-width: 600px)">
+                        <img class="moto__img-mob" src="images/moto-mob.png" alt="">
+                    </picture>
+
 
                     <div class="moto__box">
                         <div class="moto__box-item moto__box-item--1">
@@ -87,13 +117,13 @@
                 <div class="line__inner">
 
                     <div class="line__box">
-                        <p class="line__title">У власників мотоциклів є два відомих вислови:</p>
-                        <p class="line__text">
+                        <h2 class="line__title">У власників мотоциклів є два відомих вислови:</h2>
+                        <h2 class="line__text">
                             — «всі падають»
-                        </p>
-                        <p class="line__text">
+                        </h2>
+                        <h2 class="line__text">
                             — «мотоциклісти поділяються на тих хто впав і тих хто ще впаде»
-                        </p>
+                        </h2>
                     </div>
                 </div>
 
@@ -107,10 +137,10 @@
         <section class="example">
             <div class="container">
 
-                <p class="example__pre-title">
+                <h2 class="example__pre-title">
                     Щоб відповісти на питання – «встановлювати крашпеди чи ні», спочатку для себе дайте відповідь на
                     наступні питання:
-                </p>
+                </h2>
                 <p class="example__question">
                     — Користуєтесь Ви як власник мотоциклу полісом страхування?
                 </p>
@@ -122,40 +152,54 @@
                     на ремонт і врятувати здоров’я і навіть життя самого мотоцикліста.
                 </p>
 
-                <p class="example__title">Приклад установки</p>
+                <h2 class="example__title">Приклад установки</h2>
 
                 <div class="example__inner">
                     <div class="example__img example__block1">
-                        <img class="example__block1-img example__img" src="images/e1.jpg" alt="">
+                        <a href="images/e1.jpg" data-fancybox="gallery">
+                            <img class="example__block1-img example__img" src="images/e1.jpg" alt="">
+                        </a>
                     </div>
                     <div class="example__block2">
                         <div class="example__img example__img-2">
-                            <img src="images/e2.jpg" alt="" class="example__block2-img">
+                            <a href="images/e2.jpg" data-fancybox="gallery">
+                                <img src="images/e2.jpg" alt="" class="example__block2-img">
+                            </a>
                         </div>
                         <div class="example__img example__img-2">
-                            <img src="images/e3.jpg" alt="" class="example__block2-img">
+                            <a href="images/e3.jpg" data-fancybox="gallery">
+                                <img src="images/e3.jpg" alt="" class="example__block2-img">
+                            </a>
                         </div>
                     </div>
                     <div class="example__block3">
                         <div class="example__img example__img-3">
-                            <img src="images/e4.jpg" alt="" class="example__block3-img">
+                            <a href="images/e4.jpg" data-fancybox="gallery">
+                                <img src="images/e4.jpg" alt="" class="example__block3-img">
+                            </a>
                         </div>
                         <div class="example__img example__img-3">
-                            <img src="images/e5.jpg" alt="" class="example__block3-img">
+                            <a href="images/e5.jpg" data-fancybox="gallery">
+                                <img src="images/e5.jpg" alt="" class="example__block3-img">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <p class="example__wrapper-title">
+                <h2 class="example__wrapper-title">
                     Приклади спрацювання
-                </p>
+                </h2>
 
                 <div class="example__wrapper">
-                    <div class="example__wrapper-block example__img">
-                        <img src="images/e6.jpg" alt="" class="example__wrapper-img example__img">
+                    <div class="example__wrapper-block example__wrapper-block1 example__img">
+                        <a href="images/e6.jpg" data-fancybox="gallery2">
+                            <img src="images/e6.jpg" alt="" class="example__wrapper-img example__img">
+                        </a>
                     </div>
                     <div class="example__wrapper-block example__img">
-                        <img src="images/e7.jpg" alt="" class="example__wrapper-img example__img">
+                        <a href="images/e7.jpg" data-fancybox="gallery2">
+                            <img src="images/e7.jpg" alt="" class="example__wrapper-img example__img">
+                        </a>
                     </div>
                 </div>
 
@@ -181,7 +225,7 @@
                                 <img class="info__top-img" src="images/icons/1.svg" alt="">
                             </div>
 
-                            <p class="info__top-title">Довіряйте рекомен<wbr>даціям</p>
+                            <h3 class="info__top-title">Довіряйте рекомен<wbr>даціям</h3>
                         </div>
 
                         <p class="info__item-text">
@@ -199,7 +243,7 @@
                                 <img class="info__top-img" src="images/icons/2.png" alt="">
                             </div>
 
-                            <p class="info__top-title">Розмір має значення</p>
+                            <h3 class="info__top-title">Розмір має значення</h3>
                         </div>
 
                         <p class="info__item-text">
@@ -213,14 +257,15 @@
                             це може не допомогти, а ще і нашкодити.
                         </p>
                     </div>
-
+                </div>
+                <div class="info__items">
                     <div class="info__item">
                         <div class="info__item-top">
                             <div class="info__top-icon">
                                 <img class="info__top-img" src="images/icons/3.svg" alt="">
                             </div>
 
-                            <p class="info__top-title">Ми вивчаємо моделі світових виробників</p>
+                            <h3 class="info__top-title">Ми вивчаємо моделі світових виробників</h3>
                         </div>
 
                         <p class="info__item-text">
@@ -234,8 +279,8 @@
                                 <img class="info__top-img" src="images/icons/4.svg" alt="">
                             </div>
 
-                            <p class="info__top-title">Високоякісні
-                                матеріали</p>
+                            <h3 class="info__top-title">Високоякісні
+                                матеріали</h3>
                         </div>
 
                         <p class="info__item-text">
@@ -255,10 +300,10 @@
             <div class="container">
 
                 <div class="help__inner">
-                    <img class="help__img" src="images/moto-2.webp" alt="">
+                    <img class="help__img" src="images/moto-2.png" alt="">
 
                     <div class="help__block">
-                        <p class="help__title">Потрібна допомога?</p>
+                        <h3 class="help__title">Потрібна допомога?</h3>
                         <p class="help__text">
                             Наші менеджери із задоволенням допоможуть вам розібратися у всіх характеристиках
                             представленої продукції та дадуть поради - що підійде для вас більше
