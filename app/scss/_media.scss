@@ -270,8 +270,9 @@
         &__logo-mob {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             max-width: 233px;
-            height: 40px;
+            // height: 40px;
         }
         &__logo-icon {
             max-width: 40px;
@@ -279,6 +280,7 @@
         }
         &__logo-text {
             width: 183px;
+            height: 21px;
         }
     }
 

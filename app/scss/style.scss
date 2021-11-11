@@ -465,7 +465,7 @@
         @extend %m-600;
         transition: all 0.4s;
         &:hover {
-            box-shadow: 0px 8px 24px rgba(255, 237, 0, 0.15);
+            box-shadow: 0px 0px 30px rgba(205, 190, 0, 0.84);
         }
     }
 }
@@ -560,6 +560,9 @@
         &::before {
             content: "";
             position: absolute;
+        }
+        &:hover {
+            text-decoration: underline;
         }
     }
     &__contact-phone {
