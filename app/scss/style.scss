@@ -523,6 +523,10 @@
         line-height: 130%;
         @extend %m-500;
         margin-bottom: 15px;
+        transition: all 0.4s;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__politics {
         font-size: 16px;
